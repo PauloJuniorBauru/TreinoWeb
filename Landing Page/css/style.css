@@ -2,10 +2,16 @@
    margin: 0;
    padding: 0; 
    box-sizing: border-box;
+   font-family: 'minha fonte';
 }
 
 html, body {
     height: 100%;
+}
+
+@font-face {
+    src: url('../fonts/Louis George Cafe.ttf');
+    font-family: 'minha fonte';
 }
 
 .center {
@@ -37,7 +43,60 @@ header img {
 
 .form {
     width: 400px;
-    height: 100%;
+    height: calc(100% + 30px);
     background-color: white;
     float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid #ccc;
+    padding: 10px;
+}
+
+.form h2 {
+    font-weight: normal;
+    font-size: 21px;
+    color: #999;
+}
+
+.form .input-container {
+    margin-top: 20px;
+}
+
+.form .input-container span {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #bbb;
+}
+
+.form .input-container input[type=text] {
+    width: 344px;
+    height: 54px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+.form p {    
+    font-size: 17px;
+    color: #bbb;
+    margin: 20px 0;
+}
+
+.form .submit-container {
+    text-align: center;
+}
+
+.form .submit-container input[type=submit] {
+    width: 280px;
+    height: 56px;
+    background-color: #363a6d;
+    color: white;
+    font-size: 17px; 
+    border: none; 
+    border-bottom: 5px solid #4a5097;
+    cursor: pointer;
+}
+
+.form .submit-container input[type=submit]:hover {
+    background-color: #323665;
 }
